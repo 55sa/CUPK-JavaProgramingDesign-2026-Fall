@@ -1,4 +1,4 @@
-public class CommandLinePractice {
+public class CommandLinePracticeAnswer {
     public static void main(String[] args) {
         if (args.length == 0) {
             System.out.println("请在命令行中输入姓名参数。 / Please provide a name.");

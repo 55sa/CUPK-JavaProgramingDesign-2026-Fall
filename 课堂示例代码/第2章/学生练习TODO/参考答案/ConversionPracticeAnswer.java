@@ -1,4 +1,4 @@
-public class ConversionPractice {
+public class ConversionPracticeAnswer {
     public static void main(String[] args) {
         int wholeNumber = 125;
         double decimalNumber = 34.89;

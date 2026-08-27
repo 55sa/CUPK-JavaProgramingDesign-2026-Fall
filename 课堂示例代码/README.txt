@@ -1,8 +1,10 @@
-Java 程序设计课堂示例（第1—2章）
+Java 程序设计课堂示例（第1—4章）
 
 学生练习：
 - 第1章/学生练习TODO：6 道带 TODO 的学生版编程题。
 - 第2章/学生练习TODO：8 道带 TODO 的学生版编程题。
+- 第3章/学生练习TODO：8 道带 TODO 的学生版编程题。
+- 第4章/学生练习TODO：8 道带 TODO 的学生版编程题。
 - 学生先完成 TODO，再参考章节目录中的完整示例代码。
 
 运行方法：
@@ -31,6 +33,20 @@ Java 程序设计课堂示例（第1—2章）
 7. IntLongCharReport.java：编程练习1，综合使用 int、long、char 和 Unicode。
 8. RectangleInput.java：编程练习2，输入矩形长宽并演示强制类型转换。
 9. ScoreStatistics.java：编程练习3，使用数组统计总分、平均分、最高分和最低分。
+
+第3章
+1. OperatorDemo.java：算术、关系和逻辑运算符。
+2. ShortCircuitDemo.java：逻辑运算的短路效果。
+3. BranchDemo.java：if-else if 多分支。
+4. LoopSeriesDemo.java：循环生成数列并累加。
+5. ScannerAverageDemo.java：循环输入并求平均值。
+
+第4章
+1. ClassObjectDemo.java：类、成员变量、方法和多个对象。
+2. ConstructorDemo.java：构造方法重载与对象初始化。
+3. ReferenceDemo.java：对象引用和共享实体。
+4. CompositionDemo.java：对象组合。
+5. OverloadDemo.java：方法重载。
 
 课堂提示：
 - 先让学生预测输出，再运行验证。

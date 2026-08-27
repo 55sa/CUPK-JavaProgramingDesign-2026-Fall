@@ -1,4 +1,4 @@
-public class MethodCallPractice {
+public class MethodCallPracticeAnswer {
     static void printSeparator() {
         System.out.println("====================");
     }

@@ -1,4 +1,4 @@
-public class IntDivisionPractice {
+public class IntDivisionPracticeAnswer {
     public static void main(String[] args) {
         int totalScore = 386;
         int students = 5;

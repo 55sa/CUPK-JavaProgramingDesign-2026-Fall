@@ -1,4 +1,4 @@
-public class CharUnicodePractice {
+public class CharUnicodePracticeAnswer {
     public static void main(String[] args) {
         char letter = 'Z';
         char chinese = '中';

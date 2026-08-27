@@ -1,4 +1,4 @@
-public class ArrayStatisticsPractice {
+public class ArrayStatisticsPracticeAnswer {
     public static void main(String[] args) {
         int[] scores = {88, 92, 76, 95, 81};
 

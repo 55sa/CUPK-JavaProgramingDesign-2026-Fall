@@ -1,4 +1,4 @@
-public class CourseCardPractice {
+public class CourseCardPracticeAnswer {
     public static void main(String[] args) {
         String courseName = "Java 程序设计";
         String teacherName = "王老师";

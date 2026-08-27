@@ -1,4 +1,4 @@
-public class BasicTypesPractice {
+public class BasicTypesPracticeAnswer {
     public static void main(String[] args) {
         int age = 18;
         long population = 1_400_000_000L;

@@ -1,4 +1,4 @@
-public class BinarySearchPractice {
+public class BinarySearchPracticeAnswer {
     static int binarySearch(int[] data, int target) {
         int low = 0;
         int high = data.length - 1;
