@@ -1,10 +1,12 @@
-Java 程序设计课堂示例（第1—4章）
+Java 程序设计课堂示例（第1—6章）
 
 学生练习：
 - 第1章/学生练习TODO：6 道带 TODO 的学生版编程题。
 - 第2章/学生练习TODO：8 道带 TODO 的学生版编程题。
 - 第3章/学生练习TODO：8 道带 TODO 的学生版编程题。
 - 第4章/学生练习TODO：8 道带 TODO 的学生版编程题。
+- 第5章/学生练习TODO：8 道带 TODO 的学生版编程题。
+- 第6章/学生练习TODO：8 道带 TODO 的学生版编程题。
 - 学生先完成 TODO，再参考章节目录中的完整示例代码。
 
 运行方法：
@@ -47,6 +49,20 @@ Java 程序设计课堂示例（第1—4章）
 3. ReferenceDemo.java：对象引用和共享实体。
 4. CompositionDemo.java：对象组合。
 5. OverloadDemo.java：方法重载。
+
+第5章
+1. InheritanceDemo.java：父类、子类和继承成员。
+2. OverrideDemo.java：方法重写与动态绑定。
+3. SuperDemo.java：super 调用父类构造方法和方法。
+4. PolymorphismDemo.java：父类引用与多态调用。
+5. AbstractClassDemo.java：抽象类和抽象方法。
+
+第6章
+1. InterfaceDemo.java：接口声明、实现和接口引用。
+2. DefaultStaticMethodDemo.java：接口默认方法和静态方法。
+3. InterfaceCallbackDemo.java：接口回调。
+4. LambdaDemo.java：函数式接口和 Lambda 表达式。
+5. MultiInterfaceDemo.java：一个类实现多个接口。
 
 课堂提示：
 - 先让学生预测输出，再运行验证。
