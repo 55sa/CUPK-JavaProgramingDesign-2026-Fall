@@ -1,0 +1,33 @@
+手写作业 1：基本数据类型、运算符和分支语句
+Handwritten Homework 1: Basic Types, Operators, and Branches
+
+一、写出变量的类型和值。
+Write the type and value of each variable.
+
+int age = 18;
+long population = 1400000000L;
+char grade = 'A';
+
+二、已知下面的变量，请写出每个表达式的结果。
+Given the variables below, write the result of each expression.
+
+int a = 7;
+int b = 2;
+
+1. a + b
+2. a / b
+3. a % b
+4. a > b
+
+三、补全 if-else 语句：score 大于等于 60 输出“及格”，否则输出“不及格”。
+Complete the if-else statement: print “Pass” when score is at least 60; otherwise print “Fail”.
+
+int score = 75;
+if (____________________) {
+    System.out.println("及格");
+} else {
+    System.out.println("不及格");
+}
+
+四、写出上述程序中 score 分别为 75 和 50 时的输出。
+Write the output when score is 75 and when score is 50.

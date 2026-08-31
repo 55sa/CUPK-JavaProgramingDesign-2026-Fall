@@ -1,0 +1,40 @@
+手写作业 2：类与对象
+Handwritten Homework 2: Classes and Objects
+
+请手写一个完整的 Java 程序，完成下面的要求。
+Write a complete Java program by hand.
+
+1. 定义 Student 类。
+   Define a Student class.
+
+2. Student 类包含两个成员变量：
+   The Student class contains two fields:
+   String name
+   int score
+
+3. 编写有参构造方法，为 name 和 score 赋值。
+   Write a parameterized constructor that initializes name and score.
+
+4. 编写 showInfo() 方法，输出学生姓名和成绩。
+   Write showInfo() to print the student's name and score.
+
+5. 定义主类 StudentHomework，在 main 方法中创建一个学生对象：
+   Define the main class StudentHomework and create this object in main:
+
+   姓名 / Name: Li Ming
+   成绩 / Score: 88
+
+6. 调用 showInfo()。
+   Call showInfo().
+
+提示结构 / Suggested structure:
+
+class Student {
+    // 成员变量、构造方法和 showInfo()
+}
+
+public class StudentHomework {
+    public static void main(String[] args) {
+        // 创建对象并调用方法
+    }
+}

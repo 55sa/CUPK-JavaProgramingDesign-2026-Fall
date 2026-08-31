@@ -1,0 +1,43 @@
+手写作业 3：继承、重写和多态
+Handwritten Homework 3: Inheritance, Overriding, and Polymorphism
+
+请根据要求补全下面的程序。
+Complete the program according to the requirements.
+
+要求：
+1. Animal 类的 speak() 输出“Animal sound”。
+2. Dog 类继承 Animal，并重写 speak()，输出“Woof”。
+3. 在 main 中使用父类引用保存 Dog 对象。
+4. 调用 animal.speak()，并写出运行结果。
+
+Requirements:
+1. Animal.speak() prints “Animal sound”.
+2. Dog extends Animal and overrides speak() to print “Woof”.
+3. Store a Dog object in a parent-class reference in main.
+4. Call animal.speak() and write the output.
+
+class Animal {
+    void speak() {
+        ________________________________
+    }
+}
+
+class Dog __________________ Animal {
+    @Override
+    void speak() {
+        ________________________________
+    }
+}
+
+public class AnimalHomework {
+    public static void main(String[] args) {
+        Animal animal = ________________________________;
+        animal.speak();
+    }
+}
+
+运行结果 / Output:
+________________________________
+
+简答：为什么调用的是 Dog 类的 speak()？
+Short answer: Why is Dog.speak() called?

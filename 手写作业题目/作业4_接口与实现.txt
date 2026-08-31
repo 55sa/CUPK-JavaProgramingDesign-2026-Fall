@@ -1,0 +1,46 @@
+手写作业 4：接口与实现
+Handwritten Homework 4: Interfaces and Implementations
+
+请手写一个简单的接口程序。
+Write a simple interface program by hand.
+
+1. 定义 Printable 接口，其中包含 void print() 方法。
+   Define a Printable interface containing void print().
+
+2. 定义 Book 类实现 Printable 接口。
+   Define Book and let it implement Printable.
+
+3. Book 类包含 String title 成员变量和有参构造方法。
+   Book contains a String title field and a parameterized constructor.
+
+4. 在 print() 中输出书名。
+   Print the book title in print().
+
+5. 在 main 中使用 Printable 接口引用保存 Book 对象，并调用 print()。
+   In main, store a Book object in a Printable reference and call print().
+
+提示结构 / Suggested structure:
+
+interface Printable {
+    ________________________________
+}
+
+class Book __________________ Printable {
+    private String title;
+
+    Book(String title) {
+        ________________________________
+    }
+
+    @Override
+    public void print() {
+        ________________________________
+    }
+}
+
+public class InterfaceHomework {
+    public static void main(String[] args) {
+        Printable item = ________________________________;
+        ________________________________;
+    }
+}
