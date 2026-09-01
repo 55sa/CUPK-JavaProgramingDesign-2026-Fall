@@ -1,28 +1,33 @@
-interface CallbackGreeting {
-    void greet(String name);
-}
+interface CallbackShowMessage {
+    void showTrademark();
 
-class ChineseGreeting implements CallbackGreeting {
-    @Override
-    public void greet(String name) {
-        System.out.println("你好，" + name);
+    default void outputStart() {
+        System.out.println("---- 开始显示商标 ----");
     }
 }
 
-class EnglishGreeting implements CallbackGreeting {
+class CallbackTv implements CallbackShowMessage {
     @Override
-    public void greet(String name) {
-        System.out.println("Hello, " + name);
+    public void showTrademark() {
+        System.out.println("电视机商标：海尔");
+    }
+}
+
+class CallbackPc implements CallbackShowMessage {
+    @Override
+    public void showTrademark() {
+        System.out.println("计算机商标：联想");
     }
 }
 
 public class InterfaceCallbackDemo {
-    static void runGreeting(CallbackGreeting greeting, String name) {
-        greeting.greet(name);
-    }
-
     public static void main(String[] args) {
-        runGreeting(new ChineseGreeting(), "Li Ming");
-        runGreeting(new EnglishGreeting(), "Li Ming");
+        CallbackShowMessage message = new CallbackTv();
+        message.outputStart();
+        message.showTrademark();
+
+        message = new CallbackPc();
+        message.outputStart();
+        message.showTrademark();
     }
 }
