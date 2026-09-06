@@ -1,0 +1,7 @@
+30 题扩充版测试 / Expanded 30-task verification
+
+每个填空均有独立 TODO 提示，编号匹配。 / Every blank has a matching TODO.
+未填：0 正确、30 未完成。 / Untouched: 0 passed, 30 unfinished.
+只填 Q01：1 正确、29 未完成。 / Q01 only: 1 passed, 29 unfinished.
+完整填写：30/30 正确，包含替换数据用例。 / Completed: 30/30 passed, including changed-data cases.
+学生填完版和教师答案以 Java 8 兼容模式编译运行，输出与参考文件一致。 / Filled starter and teacher answer compiled for Java 8 and matched expected output.

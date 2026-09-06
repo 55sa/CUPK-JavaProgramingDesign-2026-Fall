@@ -1,6 +1,6 @@
-第三章简单填空 / Chapter 3 Easy Practice
+Java 前两章基础填空 / Java Basics: Chapters 1–2
 
-学生文件 / Student file: ClassScoreReportPractice.java
+学生文件 / Student file: JavaBasicsPractice.java
 逐题测试 / Check each task:
   javac -encoding UTF-8 PracticeChecker.java
   java PracticeChecker

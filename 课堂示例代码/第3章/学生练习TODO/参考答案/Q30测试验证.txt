@@ -1,0 +1,27 @@
+填写 / Filled: numbers.length - 1
+Java 练习测试结果 / Java Practice Results
+时间 / Time: 2026-09-06T18:03:10.911773300
+练习文件 / Source: C:\Users\hjh\AppData\Local\Temp\q30-test-8aig6_pr\ClassScoreReportPractice.java
+Q30 正确 / PASS: 逆序输出 / Reverse output
+RESULT passed=1 unfinished=0 failed=0 total=1
+通过测试代表本题测试用例正确，仍需理解代码。 / Passing means the supplied test cases passed; explain your code too.
+
+
+填写 / Filled: 2
+Java 练习测试结果 / Java Practice Results
+时间 / Time: 2026-09-06T18:03:11.611761200
+练习文件 / Source: C:\Users\hjh\AppData\Local\Temp\q30-test-8aig6_pr\ClassScoreReportPractice.java
+Q30 第 2 个测试 / Test 2: 运行错误 / RUNTIME ERROR: Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at StudentTask.main(StudentTask.java:9)
+RESULT passed=0 unfinished=0 failed=1 total=1
+通过测试代表本题测试用例正确，仍需理解代码。 / Passing means the supplied test cases passed; explain your code too.
+
+
+填写 / Filled: numbers.length
+Java 练习测试结果 / Java Practice Results
+时间 / Time: 2026-09-06T18:03:12.303863
+练习文件 / Source: C:\Users\hjh\AppData\Local\Temp\q30-test-8aig6_pr\ClassScoreReportPractice.java
+Q30 第 1 个测试 / Test 1: 运行错误 / RUNTIME ERROR: Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at StudentTask.main(StudentTask.java:9)
+RESULT passed=0 unfinished=0 failed=1 total=1
+通过测试代表本题测试用例正确，仍需理解代码。 / Passing means the supplied test cases passed; explain your code too.

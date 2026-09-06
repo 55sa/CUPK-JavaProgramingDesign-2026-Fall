@@ -1,0 +1,44 @@
+Hello, Java!
+Java Class
+Ready
+javac Hello.java
+java Hello
+18
+3
+200
+3000000000
+12.5
+1.75
+A
+true
+Name: Li
+80.0
+8
+65
+60
+80
+3
+0
+90
+80
+2
+12.50
+18
+A
+B
+30
+B
+2.5
+false
+2
+9
+9
+1
+9
+2
+3
+99
+12
+Java
+203
+B
