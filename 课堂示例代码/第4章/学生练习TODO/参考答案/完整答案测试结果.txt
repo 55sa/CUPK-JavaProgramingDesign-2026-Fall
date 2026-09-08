@@ -1,0 +1,35 @@
+Java 练习测试结果 / Java Practice Results
+时间 / Time: 2026-09-07T22:00:46.148341700
+练习文件 / Source: C:\Users\hjh\AppData\Local\Temp\chapter4-check-inmywf1w\ObjectBasicsPractice.java
+Q01 正确 / PASS: 创建第一个对象 / Create an object
+Q02 正确 / PASS: 设置对象属性 / Set a field
+Q03 正确 / PASS: 设置对象姓名 / Set a name
+Q04 正确 / PASS: 两个独立对象 / Two independent objects
+Q05 正确 / PASS: 对象属性相互独立 / Independent fields
+Q06 正确 / PASS: 调用无参方法 / Call a method
+Q07 正确 / PASS: 方法修改对象 / Change state with a method
+Q08 正确 / PASS: 方法返回属性 / Return a field
+Q09 正确 / PASS: 方法接收参数 / Pass an argument
+Q10 正确 / PASS: this 区分同名变量 / Use this
+Q11 正确 / PASS: 无参构造方法 / No-argument constructor
+Q12 正确 / PASS: 带参构造方法 / Parameterized constructor
+Q13 正确 / PASS: 构造方法中的 this / this in a constructor
+Q14 正确 / PASS: 两个构造参数 / Two constructor arguments
+Q15 正确 / PASS: 矩形对象面积 / Rectangle area
+Q16 正确 / PASS: 两个对象调用同一方法 / Same method, different objects
+Q17 正确 / PASS: 引用赋值 / Assign a reference
+Q18 正确 / PASS: 比较同一对象的引用 / Compare aliases
+Q19 正确 / PASS: 相同属性不是同一对象 / Same values, different objects
+Q20 正确 / PASS: null 与对象 / null and an object
+Q21 正确 / PASS: private 与 getter / Private field and getter
+Q22 正确 / PASS: setter 更新私有字段 / Update a private field
+Q23 正确 / PASS: setter 检查范围 / Validate a setter
+Q24 正确 / PASS: 对象作为参数 / An object parameter
+Q25 正确 / PASS: 重新指定引用 / Reassign a reference
+Q26 正确 / PASS: static 共享计数 / A shared static counter
+Q27 正确 / PASS: 对象数组的元素 / Object array elements
+Q28 正确 / PASS: 遍历对象数组 / Traverse an object array
+Q29 正确 / PASS: 对象组合 / Object composition
+Q30 正确 / PASS: 小综合：学生信息卡 / Mini task: student card
+RESULT passed=30 unfinished=0 failed=0 total=30
+通过测试代表本题测试用例正确，仍需理解代码。 / Passing means the supplied test cases passed; explain your code too.

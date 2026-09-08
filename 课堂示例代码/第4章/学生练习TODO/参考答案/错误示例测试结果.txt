@@ -1,0 +1,41 @@
+Java 练习测试结果 / Java Practice Results
+时间 / Time: 2026-09-07T22:00:53.038002100
+练习文件 / Source: C:\Users\hjh\AppData\Local\Temp\chapter4-check-inmywf1w\ObjectBasicsPractice.java
+Q01 正确 / PASS: 创建第一个对象 / Create an object
+Q02 第 1 个测试 / Test 1: 编译错误 / COMPILE ERROR: 找不到符号
+  符号:   变量 noSuchField
+  位置: 类型为Student02的变量 s
+Q03 未完成 / NOT FINISHED
+Q04 未完成 / NOT FINISHED
+Q05 未完成 / NOT FINISHED
+Q06 未完成 / NOT FINISHED
+Q07 未完成 / NOT FINISHED
+Q08 未完成 / NOT FINISHED
+Q09 未完成 / NOT FINISHED
+Q10 未完成 / NOT FINISHED
+Q11 未完成 / NOT FINISHED
+Q12 未完成 / NOT FINISHED
+Q13 未完成 / NOT FINISHED
+Q14 未完成 / NOT FINISHED
+Q15 未完成 / NOT FINISHED
+Q16 未完成 / NOT FINISHED
+Q17 第 1 个测试 / Test 1: 结果不符 / WRONG OUTPUT
+    预期 / Expected: 95
+    实际 / Actual: 60
+Q18 未完成 / NOT FINISHED
+Q19 未完成 / NOT FINISHED
+Q20 第 1 个测试 / Test 1: 运行错误 / RUNTIME ERROR: true
+Exception in thread "main" java.lang.NullPointerException: Cannot read field "score" because "<local1>" is null
+	at StudentTask.main(StudentTask.java:10)
+Q21 未完成 / NOT FINISHED
+Q22 未完成 / NOT FINISHED
+Q23 未完成 / NOT FINISHED
+Q24 未完成 / NOT FINISHED
+Q25 未完成 / NOT FINISHED
+Q26 未完成 / NOT FINISHED
+Q27 未完成 / NOT FINISHED
+Q28 未完成 / NOT FINISHED
+Q29 未完成 / NOT FINISHED
+Q30 未完成 / NOT FINISHED
+RESULT passed=1 unfinished=26 failed=3 total=30
+通过测试代表本题测试用例正确，仍需理解代码。 / Passing means the supplied test cases passed; explain your code too.

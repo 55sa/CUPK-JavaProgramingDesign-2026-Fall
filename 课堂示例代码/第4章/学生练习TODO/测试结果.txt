@@ -1,0 +1,35 @@
+Java 练习测试结果 / Java Practice Results
+时间 / Time: 2026-09-07T22:00:46.027835400
+练习文件 / Source: F:\work\java程序设计\双语\课堂示例代码\第4章\学生练习TODO\ObjectBasicsPractice.java
+Q01 未完成 / NOT FINISHED
+Q02 未完成 / NOT FINISHED
+Q03 未完成 / NOT FINISHED
+Q04 未完成 / NOT FINISHED
+Q05 未完成 / NOT FINISHED
+Q06 未完成 / NOT FINISHED
+Q07 未完成 / NOT FINISHED
+Q08 未完成 / NOT FINISHED
+Q09 未完成 / NOT FINISHED
+Q10 未完成 / NOT FINISHED
+Q11 未完成 / NOT FINISHED
+Q12 未完成 / NOT FINISHED
+Q13 未完成 / NOT FINISHED
+Q14 未完成 / NOT FINISHED
+Q15 未完成 / NOT FINISHED
+Q16 未完成 / NOT FINISHED
+Q17 未完成 / NOT FINISHED
+Q18 未完成 / NOT FINISHED
+Q19 未完成 / NOT FINISHED
+Q20 未完成 / NOT FINISHED
+Q21 未完成 / NOT FINISHED
+Q22 未完成 / NOT FINISHED
+Q23 未完成 / NOT FINISHED
+Q24 未完成 / NOT FINISHED
+Q25 未完成 / NOT FINISHED
+Q26 未完成 / NOT FINISHED
+Q27 未完成 / NOT FINISHED
+Q28 未完成 / NOT FINISHED
+Q29 未完成 / NOT FINISHED
+Q30 未完成 / NOT FINISHED
+RESULT passed=0 unfinished=30 failed=0 total=30
+通过测试代表本题测试用例正确，仍需理解代码。 / Passing means the supplied test cases passed; explain your code too.

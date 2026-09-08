@@ -1,0 +1,19 @@
+第四章对象练习验证 / Chapter 4 verification
+
+30 题，52 个 TODO 空白，57 个测试用例全部通过。
+30 tasks, 52 TODO blanks, all 57 supplied cases passed.
+
+验证环境：JDK 17，完整文件及测试器以 --release 8 编译。
+Environment: JDK 17; full files and checker compiled with --release 8.
+
+初始文件：0 正确、30 未完成。
+Untouched starter: 0 passed, 30 unfinished.
+填空答案替换到学生文件后：30/30 正确。
+Filled starter: 30/30 passed.
+完整学生文件和教师答案均能单独编译运行，输出与 expected-output.txt 一致。
+Filled student file and teacher answer compile separately and match expected-output.txt.
+
+混合验证：1 题正确、26 题未完成、3 题错误（语法、错误输出、空指针），后续题继续判分。
+Mixed validation: 1 passed, 26 unfinished, 3 failed (syntax, output, null pointer); grading continues.
+TXT 与屏幕判分内容一致，包含时间、源文件、逐题结果和汇总。
+TXT content matches console grading, with time, source, per-task results and totals.
