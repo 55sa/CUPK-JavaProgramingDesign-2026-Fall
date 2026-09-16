@@ -7,8 +7,15 @@ keys = ['private', 'int', 'boolean', 'GuessGame', 'this', 'maxAttempts', '0', 'f
 answer = student.replace('// 学生版：只替换 __TODOxx__，其他代码保持不变。','// 教师参考答案 / Teacher answer key')
 for i, value in enumerate(keys,1): answer = answer.replace(f'__TODO{i:02}__',value)
 (ROOT/'教师参考/GuessNumberPractice.java').write_text(answer,encoding='utf-8')
-keytext = '# 参考答案 / Ответы / Answer key\n\n'+'\n'.join(f'- TODO{i:02}: `{v}`' for i,v in enumerate(keys,1))
+keytext = '# 参考答案 / Ответы / Answer key / Jogaplar\n\n'+'\n'.join(f'- TODO{i:02}: `{v}`' for i,v in enumerate(keys,1))
 keytext += '''
+
+## Türkmençe düşündiriş jogaplary
+
+1. Meýdanlar bir oýnuň ýagdaýyny beýan edýär; metodlar olary ulanýar we täzeleýär.
+2. game — obýekte salgylanma, guess — metodyň ady, number — argument.
+3. Ýok. attempts her obýektiň öz aýratyn meýdanydyr.
+4. Meýdanda int görnüşiniň başlangyç bahasy 0 galýar, sebäbi parametr öz-özüne bellenýär.
 
 ## 解释题参考 / Suggested explanations
 
@@ -32,10 +39,10 @@ FIXED_ANSWER = ""  # 随机游戏留空，调试可填 "12" / Leave empty for ra
 def start_game():
     filename = Path("GuessNumberPractice.java")
     if not filename.exists():
-        print("请先运行 Java 填空单元。/ Run the Java exercise cell first."); return
+        print("请先运行 Java 填空单元。/ Ilki Java kodunyň öýjügini işlediň. / Run the Java exercise cell first."); return
     source = filename.read_text(encoding="utf-8")
     if re.search(r"__TODO\\d+__", source):
-        print("还有 TODO 未填写，请补全后重新保存代码单元。/ Complete all TODOs and rerun the Java cell."); return
+        print("还有 TODO 未填写，请补全后重新保存代码单元。/ Ähli TODO-lary dolduryň we Java öýjügini gaýtadan işlediň. / Complete all TODOs and rerun the Java cell."); return
     suffix = ".exe" if os.name == "nt" else ""
     roots = [JDK_HOME, os.environ.get("JAVA_HOME", "")]
     compiler = shutil.which("javac")
@@ -48,16 +55,16 @@ def start_game():
         if java.is_file() and javac.is_file():
             tools = (str(java),str(javac)); break
     if tools is None:
-        print("未找到 JDK，请设置 JDK_HOME。/ JDK not found; set JDK_HOME."); return
+        print("未找到 JDK，请设置 JDK_HOME。/ JDK tapylmady; JDK_HOME bahasyny belläň. / JDK not found; set JDK_HOME."); return
     if FIXED_ANSWER and (not FIXED_ANSWER.isdigit() or not 1 <= int(FIXED_ANSWER) <= 20):
-        print("固定答案应为 1–20 或空字符串。/ Use 1–20 or an empty string."); return
+        print("固定答案应为 1–20 或空字符串。/ 1–20 aralygyndaky sany ýa-da boş setiri ulanyň. / Use 1–20 or an empty string."); return
     with tempfile.TemporaryDirectory(prefix="guess-game-") as folder:
         # 只在临时目录编译，避免使用旧的 class 文件。
         # Compile in a temporary folder to avoid stale class files.
         compiled = subprocess.run([tools[1], "-encoding", "UTF-8", "-d", folder, str(filename.resolve())],
                                   capture_output=True, text=True, encoding="utf-8", errors="replace")
         if compiled.returncode:
-            print("编译失败 / Compilation failed\\n" + compiled.stderr); return
+            print("编译失败 / Kompilýasiýa başa barmady / Compilation failed\\n" + compiled.stderr); return
         command = [tools[0], "-Dfile.encoding=UTF-8", "-cp", folder, "GuessNumberPractice"]
         if FIXED_ANSWER: command.append(FIXED_ANSWER)
         process = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
@@ -71,9 +78,9 @@ def start_game():
                 else:
                     print(line, end="", flush=True)
             if process.wait() != 0:
-                print("运行失败，请检查 Java 代码。/ Run failed; check the Java code.")
+                print("运行失败，请检查 Java 代码。/ Işletmek başa barmady; Java koduny barlaň. / Run failed; check the Java code.")
         except (KeyboardInterrupt, EOFError):
-            print("\\n游戏已停止。/ Game stopped.")
+            print("\\n游戏已停止。/ Oýun bes edildi. / Game stopped.")
         finally:
             if process.poll() is None:
                 process.terminate()
@@ -90,11 +97,12 @@ runner = runner.replace('line.removeprefix("INPUT>")','line[len("INPUT>"): ]')
 def md(s): return dict(cell_type='markdown',metadata={},source=s)
 def code(s): return dict(cell_type='code',metadata={},source=s,outputs=[],execution_count=None)
 notes = (ROOT/'学习说明.md').read_text(encoding='utf-8')
-head, tail = notes.split('## 4. 自测任务 / Самопроверка / Self-check tasks')
-cells = [md(head),md('## Java 填空 / Заполните код Java / Java exercise\n\n填写下面的 24 个 TODO 后运行此单元，将代码保存到当前工作目录。首行是 notebook 保存文件的指令，请保留。\nЗаполните 24 пропуска TODO и выполните ячейку, чтобы сохранить Java-файл. Сохраните первую строку команды записи файла.\n\nFill the 24 TODOs and run this cell to save the Java source in the current working directory. Keep the first line, which is a notebook file-writing command.'),code('%%writefile GuessNumberPractice.java\n'+student),md('## 开始游戏 / Начать игру / Start the game\n\n先保存上一单元，再运行下一单元，并在出现的输入框中作答。若要重玩，重新运行下一单元。若要固定答案进行自测，把 FIXED_ANSWER 设置为 "12"。\nВыполните предыдущую ячейку для сохранения кода, затем следующую для запуска игры. Отвечайте в поле ввода. Для новой игры запустите ячейку повторно. Для проверки задайте FIXED_ANSWER = "12".\n\nSave the previous cell, then run the next one and respond in its input boxes. Rerun the next cell to play again. Set FIXED_ANSWER to "12" for reproducible self-checks.'),code(runner),md('## 4. 自测任务 / Самопроверка / Self-check tasks'+tail)]
+head, tail = notes.split('## 4. 自测任务 / Самопроверка / Self-check tasks / Özbaşdak barlag')
+cells = [md(head),md('## Java 填空 / Заполните код Java / Java exercise / Java koduny dolduryň\n\n填写下面的 24 个 TODO 后运行此单元，将代码保存到当前工作目录。首行是 notebook 保存文件的指令，请保留。\nЗаполните 24 пропуска TODO и выполните ячейку, чтобы сохранить Java-файл. Сохраните первую строку команды записи файла.\n\n24 TODO boşlugyny dolduryň we Java faýlyny saklamak üçin bu öýjügi işlediň. Faýly ýazýan birinji setiri saklaň.\n\nFill the 24 TODOs and run this cell to save the Java source in the current working directory. Keep the first line, which is a notebook file-writing command.'),code('%%writefile GuessNumberPractice.java\n'+student),md('## 开始游戏 / Начать игру / Start the game / Oýny başlat\n\n先保存上一单元，再运行下一单元，并在出现的输入框中作答。若要重玩，重新运行下一单元。若要固定答案进行自测，把 FIXED_ANSWER 设置为 "12"。\nВыполните предыдущую ячейку для сохранения кода, затем следующую для запуска игры. Отвечайте в поле ввода. Для новой игры запустите ячейку повторно. Для проверки задайте FIXED_ANSWER = "12".\n\nÖňki öýjügi işledip kody saklaň, soň indiki öýjügi işlediň we giriş meýdanynda jogap beriň. Täzeden oýnamak üçin öýjügi gaýtadan işlediň. Barlag üçin FIXED_ANSWER bahasyny "12" ediň.\n\nSave the previous cell, then run the next one and respond in its input boxes. Rerun the next cell to play again. Set FIXED_ANSWER to "12" for reproducible self-checks.'),code(runner),md('## 4. 自测任务 / Самопроверка / Self-check tasks / Özbaşdak barlag'+tail)]
 for i,c in enumerate(cells): c['id']=f'guess-{i}'
 notebook = dict(cells=cells,metadata=dict(kernelspec=dict(display_name='Python 3 (ipykernel)',language='python',name='python3'),language_info=dict(name='python')),nbformat=4,nbformat_minor=5)
-(ROOT/'类与对象_猜数字游戏_三语TODO.ipynb').write_text(json.dumps(notebook,ensure_ascii=False,indent=1),encoding='utf-8')
+for name in ['类与对象_猜数字游戏_四语TODO.ipynb', '类与对象_猜数字游戏_双语TODO.ipynb']:
+    (ROOT/name).write_text(json.dumps(notebook,ensure_ascii=False,indent=1),encoding='utf-8')
 
 # Compile and run actual console interactions, including boundary and invalid inputs.
 jdk = next(p for p in sorted((Path.home()/'.jdks').glob('*')) if (p/'bin/javac.exe').exists())
